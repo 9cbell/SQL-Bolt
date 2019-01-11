@@ -40,4 +40,36 @@ SELECT * FROM movies
 SELECT DISTINCT director FROM movies
     ORDER BY director ASC;
 --4.2
+SELECT title, year FROM movies
+    ORDER BY year DESC
+    LIMIT 4;
+--4.3
+SELECT title FROM movies
+    ORDER BY title ASC
+    LIMIT 5;
+--4.4
+SELECT title FROM movies
+    ORDER BY title ASC
+    LIMIT 5 OFFSET 5;
 --exercise 5
+--5.1
+SELECT city, population FROM north_american_cities
+    WHERE country = "Canada";
+--5.2
+SELECT city, latitude FROM north_american_cities
+    WHERE country = "United States"
+    ORDER BY latitude DESC;
+--5.3
+SELECT city, longitude FROM north_american_cities
+    WHERE longitude < -87.629798
+    ORDER BY longitude ASC;
+--5.4
+SELECT city, population FROM north_american_cities
+    WHERE country LIKE "Mexico"
+    ORDER BY population DESC
+    LIMIT 2;
+--5.5
+SELECT city, population FROM north_american_cities
+    WHERE country LIKE "United States"
+    ORDER BY population DESC
+    LIMIT 2 OFFSET 2;
