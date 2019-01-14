@@ -10,7 +10,7 @@ SELECT title, domestic_sales, international_sales
     JOIN boxoffice
       ON movies.id = boxoffice.movie_id
   WHERE international_sales > domestic_sales;
---6.3
+--6.;
 SELECT title, rating
   FROM movies
     JOIN boxoffice
