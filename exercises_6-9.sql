@@ -17,7 +17,24 @@ SELECT title, rating
       ON movies.id = boxoffice.movie_id
   ORDER BY rating DESC;
 --exercise 7
-
+--7.1
+SELECT DISTINCT building FROM employees;
+--7.2
+SELECT * FROM buildings;
+--7.3
+SELECT DISTINCT building_name, role 
+  FROM buildings 
+    LEFT JOIN employees
+      ON building_name = building;
 --exercise 8
-
+--8.1
+SELECT name, role FROM employees
+  WHERE building IS NULL;
+--8.2
+SELECT DISTINCT building_name
+  FROM buildings 
+    LEFT JOIN employees
+      ON building_name = building
+    WHERE role IS NULL;
 --exercise 9
+--9.1
