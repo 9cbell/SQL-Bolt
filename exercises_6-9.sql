@@ -51,3 +51,5 @@ SELECT title, rating * 10 AS rating_percent
 SELECT title, year
   FROM movies
   WHERE year % 2 = 0;
+--exercise 10
+--10.1
