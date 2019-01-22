@@ -10,6 +10,9 @@ SELECT role, AVG(years_employed) as Average_years_employed
 SELECT building, SUM(years_employed) as Total_years_employed
   FROM employees
   GROUP BY building;
+
+
+
 --exercise 11
 --11.1
 SELECT role, COUNT(*) as Number_of_artists
@@ -24,6 +27,9 @@ SELECT role, SUM(years_employed)
   FROM employees
   GROUP BY role
   HAVING role = "Engineer";
+
+
+
 --exercise 12
 --12.1
 SELECT director, COUNT(id) as Num_movies_directed

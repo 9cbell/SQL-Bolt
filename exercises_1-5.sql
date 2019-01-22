@@ -9,6 +9,9 @@ SELECT director, title FROM movies;
 SELECT title, year FROM movies; 
 --1.4
 SELECT * FROM movies;
+
+
+
 --exercise 2
 --2.1
 SELECT id, title FROM movies
@@ -22,6 +25,10 @@ SELECT title, year FROM movies
 --2.4
 SELECT title, year FROM movies
     WHERE year <= 2003;
+
+
+
+
 --exercise 3
 --3.1
 SELECT title, director FROM movies 
@@ -35,6 +42,9 @@ SELECT title, director FROM movies
 --3.4
 SELECT * FROM movies 
     WHERE title LIKE "WALL-_";
+
+
+
 --exercise 4
 --4.1
 SELECT DISTINCT director FROM movies
@@ -51,6 +61,9 @@ SELECT title FROM movies
 SELECT title FROM movies
     ORDER BY title ASC
     LIMIT 5 OFFSET 5;
+
+
+
 --exercise 5
 --5.1
 SELECT city, population FROM north_american_cities
