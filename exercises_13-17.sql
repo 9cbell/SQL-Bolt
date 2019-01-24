@@ -24,3 +24,23 @@ UPDATE movies
 
 --excersise 15
 --15.1
+DELETE FROM movies
+    where year < 2005;
+--15.2
+DELETE FROM movies
+    where director = "Andrew Stanton";
+
+
+
+--exercise 16
+CREATE TABLE Database (
+    Name TEXT,
+    Version FLOAT,
+    Download_count INTEGER
+);
+
+
+
+
+--excerise 17
+--17.1
